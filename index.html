@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"> </script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="page-wrap">
+
+        <div class="tip">Try moving your cursor to see it in action</div>
+        <div class="content-wrap">
+            <div id="paralax-box">
+
+                <div data-depth="0.3" class="screen blue"><img src="res/blue.png" alt=""></div>
+                <div data-depth="0.1" class="screen red "><img src="res/red.png" alt=""></div>
+                <div data-depth="0.2" class="screen green"><img src="res/green.png" alt=""></div>
+            </div>
+        </div>
+        <div class="text">[ ＶａｐｏｒＰｏｏｌ　ヱ悪ー ]</div>
+    </div>
+</body>
+<script>
+    var scene = document.getElementById('paralax-box');
+    var parallaxInstance = new Parallax(this.scene, {
+    });
+    parallaxInstance.friction(0.05, 0.01);
+</script>
+</html>
